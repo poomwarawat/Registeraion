@@ -23,7 +23,11 @@ validate = (password, Re_password) =>{
     if(password == Re_password){
         return true;
     }else{
-        alert("Wrong your password")
+        var Error = document.getElementById("errormsg")
+        Error.style.color = "red"
+        Error.innerHTML = "Wrong your password"
         return false;
     }
 }
+
+

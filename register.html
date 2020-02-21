@@ -5,39 +5,44 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>Page Title</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src='register.js'></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-	<form name="myForm" id="myForm" action="login.html">
+	<div class="container">
+		<form name="myForm" id="myForm" action="login.html">
 			<span id="errormsg"></span> <br>
 			First name*: 
-			<input type="text" name="firstname" required>
+			<input class="form-control" type="text" name="firstname" required>
 			Last name*: 
-			<input type="text" name="lastname" >
+			<input class="form-control" type="text" name="lastname" >
 			<br>
-			Gender*: 
-			<input type="radio" name="gender" value="male" >Male
-			<input type="radio" name="gender" value="female" >Female
-			<input type="radio" name="gender" value="female" >Other
+			Gender*: <br>
+			<input class="form-check-input" type="radio" name="gender" value="male" >Male <br>
+			<input class="form-check-input" type="radio" name="gender" value="female" >Female <br>
+			<input class="form-check-input" type="radio" name="gender" value="female" >Other <br>
 			<br>
 			Birthday*: 
-			<input type="date" name="bday" value="" >
+			<input class="form-control" type="date" name="bday" value="" >
 			<br>
 			Email address*: 
-			<input type="email" name="email" >
+			<input class="form-control" type="email" name="email" >
 			<br>
 			Username*: 
-			<input type="text" name="username" >
+			<input class="form-control" type="text" name="username" >
 			<br>
 			Password*: 
-			<input type="password" name="password" required>
+			<input class="form-control" type="password" name="password" required>
 			<br>
 			Retype Password*: 
-			<input type="password" name="re-password" required>
+			<input class="form-control" type="password" name="re-password" required>
 			<br>
-			<input type="submit" value="Register">
-			<input type="reset" value="Reset">
+			<input class="btn btn-primary" type="submit" value="Register">
+			<input class="btn btn-danger" type="reset" value="Reset">
 	</form>
+	</div>
 </body>
 </html>
